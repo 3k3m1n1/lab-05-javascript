@@ -2,10 +2,12 @@
 <html>
 <body>
 <script>
-var noun = "cupcake";
-var adjective = "apocalyptic";
-var adverb = "madly";
-var verb = "Arguing";
+var noun = prompt("Type a noun in the field below.");
+var adjective = prompt("Now give me an adjective...");
+var adverb = prompt("Oh, can I get an adverb too?");
+var verb = prompt("Hey, it's me again... just drop a verb that ends in -ing and I'll leave you alone.");
+
+var verb = verb.charAt(0).toUpperCase() + verb.substr(1);
 
 console.log("On an " + adjective + " island,");
 console.log("Underneath a molten lava " + noun + ".");
